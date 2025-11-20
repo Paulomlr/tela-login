@@ -28,7 +28,7 @@ export default function Login() {
       >
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <Input
-            label="E-mail"
+            label="E-MAIL"
             placeholder="exemplo@mail.com"
             error={errors.email}
             {...register("email", {
@@ -41,7 +41,7 @@ export default function Login() {
           />
 
           <Input
-            label="Senha"
+            label="SENHA"
             type="password"
             placeholder="Digite sua senha"
             error={errors.password}
@@ -52,22 +52,27 @@ export default function Login() {
 
           <button
             type="submit"
-            className="w-full bg-black text-white py-2 rounded-lg"
+            className="w-full mt-8 bg-[var(--color-gray-200)] text-white py-2.5 rounded-lg hover:bg-[var(--color-gray-100)]"
           >
             Entrar
           </button>
         </form>
 
-        {/* seção inferior */}
-        <div className="mt-6 text-center">
-          <p className="text-sm text-gray-600">Ainda não tem uma conta?</p>
-          <Link
-            to="/register"
-            className="mt-2 inline-block border bg-gray-100 px-4 py-2 rounded-lg text-sm"
-          >
-            Criar conta
-          </Link>
-        </div>
+        
+      </AuthCard>
+      <AuthCard 
+        title="Ainda não tem conta?"
+        subtitle="Cadastre agora mesmo"
+        titleClass="text-[20px] font-semibold"
+      >
+        <Link
+          to="/register"
+        >
+          <button className="w-full text-black font-semibold bg-gray-500 py-2.5 rounded-lg hover:bg-[var(--color-gray-400)]">
+            Acessar conta
+          </button>
+        </Link> 
+        
       </AuthCard>
     </AuthLayout>
   );
