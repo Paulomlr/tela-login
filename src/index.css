@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+/* * Variáveis CSS Nativas (ROOT)
+ * Baseadas na paleta da imagem image_cb5e85.png
+ */
+:root {
+  /* --- Brand Colors (Marca) --- */
+  --color-brand-dark: #2E3DA3;      /* blue-dark */
+  --color-brand-base: #5165E1;      /* blue-base */
+  --color-brand-light: #8996EB;     /* blue-light */
+
+  /* --- Grayscale Colors (Escala de Cinza) --- */
+  --color-gray-100: #151619;         /* gray-100 */
+  --color-gray-200: #1E2024;         /* gray-200 */
+  --color-gray-300: #535964;         /* gray-300 */
+  --color-gray-400: #858B99;         /* gray-400 */
+  --color-gray-500: #E3E5E8;         /* gray-500 */
+  --color-gray-600: #F9FAFA;         /* gray-600 */
+  
+  /* --- Feedback Colors (Comentários/Status) --- */
+  --color-feedback-danger: #D03E3E;  /* feedback-danger */
+  --color-feedback-open: #CC3D6A;    /* feedback-open */
+  --color-feedback-progress: #355EC5;/* feedback-progress */
+  --color-feedback-done: #508B26;    /* feedback-done */
+}

@@ -8,13 +8,13 @@ interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
 export default function Input({ label, error, ...rest }: Props) {
   return (
     <div className="w-full">
-      <label className="text-sm font-medium text-gray-700">{label}</label>
+      <label className="text-[12px] font-medium text-[var(--color-gray-300)]">{label}</label>
       <input
         {...rest}
-        className="w-full mt-1 px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full text-lg py-2 border-b border-[var(--color-gray-500)] outline-none focus:ring-[var(--color-brand-base)] focus:border-[var(--color-brand-base)]"
       />
       {error && (
-        <p className="text-red-500 text-xs mt-1">{error.message}</p>
+        <p className="text-[var(--color-feedback-danger)] text-xs mt-1">{error.message}</p>
       )}
     </div>
   );
